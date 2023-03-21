@@ -1,0 +1,104 @@
+{
+  "jogadores": [
+    {
+      "nick": "Piruca13",
+      "vitoriasFortnite": 5,
+      "vitoriasLol": 6,
+      "vitoriasSTF": 11,
+      "vitoriasGeral": 22,
+      "partidas": 23,
+      "derrotas": 1,
+      "id": 1
+    },
+    {
+      "nick": "Baldra",
+      "vitoriasFortnite": 0,
+      "vitoriasLol": 10,
+      "vitoriasSTF": 5,
+      "vitoriasGeral": 15,
+      "partidas": 21,
+      "derrotas": 6,
+      "id": 2
+    },
+    {
+      "nick": "Rancore",
+      "vitoriasFortnite": 2,
+      "vitoriasLol": 6,
+      "vitoriasSTF": 9,
+      "vitoriasGeral": 17,
+      "partidas": 20,
+      "derrotas": 3,
+      "id": 3
+    },
+    {
+      "nick": "Markzman",
+      "vitoriasFortnite": 15,
+      "vitoriasLol": 0,
+      "vitoriasSTF": 3,
+      "vitoriasGeral": 18,
+      "partidas": 22,
+      "derrotas": 4,
+      "id": 4
+    },
+    {
+      "nick": "Matata",
+      "vitoriasFortnite": 1,
+      "vitoriasLol": 9,
+      "vitoriasSTF": 3,
+      "vitoriasGeral": 13,
+      "partidas": 25,
+      "derrotas": 12,
+      "id": 5
+    },
+    {
+      "nick": "Rwb",
+      "vitoriasFortnite": 0,
+      "vitoriasLol": 0,
+      "vitoriasSTF": 5,
+      "vitoriasGeral": 5,
+      "partidas": 8,
+      "derrotas": 3,
+      "id": 6
+    },
+    {
+      "nick": "Pelegolaz",
+      "vitoriasFortnite": 22,
+      "vitoriasLol": 0,
+      "vitoriasSTF": 7,
+      "vitoriasGeral": 29,
+      "partidas": 32,
+      "derrotas": 3,
+      "id": 7
+    },
+    {
+      "nick": "DarkOfWind",
+      "vitoriasFortnite": 1,
+      "vitoriasLol": 0,
+      "vitoriasSTF": 10,
+      "vitoriasGeral": 11,
+      "partidas": 11,
+      "derrotas": 0,
+      "id": 8
+    },
+    {
+      "nick": "Shadow",
+      "vitoriasFortnite": 1,
+      "vitoriasLol": 10,
+      "vitoriasSTF": 0,
+      "vitoriasGeral": 11,
+      "partidas": 18,
+      "derrotas": 7,
+      "id": 9
+    },
+    {
+      "nick": "Bruno",
+      "vitoriasFortnite": 6,
+      "vitoriasLol": 2,
+      "vitoriasSTF": 2,
+      "vitoriasGeral": 10,
+      "partidas": 15,
+      "derrotas": 5,
+      "id": 10
+    }
+  ]
+}

@@ -1,25 +1,69 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+
+const HomeView = () => import(/* webpackChunkName: "home" */'@/views/HomeView.vue')
+const CompInfoLoL = () => import(/* webpackChunkName: "lol" */'@/components/informacoes/CompInfoLoL.vue')
+const CompInfoFortnite = () => import(/* webpackChunkName: "fortnite" */'@/components/informacoes/CompInfoFortnite.vue')
+const CompInfoSTF = () => import(/* webpackChunkName: "stf" */'@/components/informacoes/CompInfoSTF.vue')
+const CompInfoGeral = () => import(/* webpackChunkName: "home" */'@/components/informacoes/CompInfoGeral.vue')
+const TabelaLutasView = () => import(/* webpackChunkName: "lutas" */'@/views/TabelaLutasView.vue')
+const CompEditar = () => import(/* webpackChunkName: "editar" */'@/components/CompEditar.vue')
+const CompCadastro = () => import(/* webpackChunkName: "cadastro" */'@/components/CompCadastro.vue')
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    alias: '/home',
+    component: HomeView,
+    children: [
+      {
+        path: '/',
+        alias: '/home',
+        name: 'home',
+        component: CompInfoGeral
+      },
+      {
+        path: 'lol',
+        name: 'lol',
+        component: CompInfoLoL
+      },
+      {
+        path: 'fortnite',
+        name: 'fortnite',
+        component: CompInfoFortnite
+      },
+      {
+        path: 'stf',
+        name: 'stf',
+        component: CompInfoSTF
+      }
+    ]
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    path: '/cadastro',
+    name: 'cadastro',
+    component: CompCadastro
+  },
+  {
+    path: '/lutas',
+    name: 'lutas',
+    component: TabelaLutasView
+  },
+  {
+    path: '/lutas/:id',
+    name: 'editar',
+    component: CompEditar
   }
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes
+  history: createWebHistory(),
+  scrollBehavior(to) {
+      if(to.hash) {
+          return { el: to.hash }
+      }
+  },
+  routes: routes
 })
 
 export default router

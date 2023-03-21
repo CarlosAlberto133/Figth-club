@@ -1,30 +1,65 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <CompNavbar :logo="logoSrc" :alt="appName" />
   <router-view/>
+  <CompFooter />
 </template>
 
+<script>
+import CompNavbar from '@/components/CompNavbar.vue'
+import CompFooter from '@/components/CompFooter.vue';
+
+export default {
+  name: 'App',
+  components: {
+    CompNavbar,
+    CompFooter
+  },
+  data: () => ({
+    logoSrc: '/img/LogoFC.svg',
+    appName: 'Fight Club'
+  })
+}
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-nav {
-  padding: 30px;
-}
+  * {
+    font-family: Helvetica;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  #tabela {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+  #heading,
+  #tabelaRows,
+  .tabelaRow {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #heading {
+    font-weight: bold;
+    padding: 12px;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  #heading div,
+  .tabelaRow div {
+    width: 50%;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .tabelaRow {
+    width: 100%;
+    padding: 12px;;
+  }
+
 </style>
