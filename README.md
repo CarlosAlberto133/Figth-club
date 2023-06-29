@@ -1,5 +1,9 @@
 # fight-club
 
+<p align="center">
+    <img width="600px" height="337px" src="src/assets/fightclub.gif" />
+</p>
+
 ## Project setup
 ```
 npm install

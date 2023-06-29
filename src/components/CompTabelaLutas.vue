@@ -75,7 +75,7 @@ export default {
                     this.jogadores = data
                 })
         },
-        deletarJogador(id) {//this.modal = 
+        deletarJogador(id) {
             fetch(`http://localhost:3000/jogadores/${id}`, {
                 method: "DELETE"
             })
@@ -165,7 +165,7 @@ export default {
                 }
                     return 0
             })
-        }
+        },
     },
     watch: {
         pesquisa(valorNovo) {

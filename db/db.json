@@ -99,6 +99,16 @@
       "partidas": 15,
       "derrotas": 5,
       "id": 10
+    },
+    {
+      "nick": "awdads",
+      "vitoriasFortnite": 24,
+      "vitoriasLol": 0,
+      "vitoriasSTF": 4,
+      "vitoriasGeral": 28,
+      "partidas": 100,
+      "derrotas": 72,
+      "id": 11
     }
   ]
 }
