@@ -11,10 +11,10 @@
         <h1 id="ranking">Ranking Geral</h1>
 
         <div id="links">
-          <router-link to="/home">Geral</router-link>
-          <router-link to="/fortnite">Fortnite</router-link>
-          <router-link to="/lol">Leage of Legends</router-link>
-          <router-link to="/stf">Street Fighter</router-link>
+          <router-link class="games" to="/home">Geral</router-link>
+          <router-link class="games" to="/fortnite">Fortnite</router-link>
+          <router-link class="games" to="/lol">Leage of Legends</router-link>
+          <router-link class="games" to="/stf">Street Fighter</router-link>
         </div>
 
         <div id="tabela">
@@ -84,7 +84,7 @@ export default {
     margin-top: 60px;
   }
 
-  a {
+  .games {
     color: #fff;
     position: relative;
     text-decoration: none;
@@ -94,7 +94,7 @@ export default {
     transition: .5s;
   }
 
-  a:before {
+  .games:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -107,12 +107,12 @@ export default {
     transition: all 0.3s ease-in-out 0s;
   }
 
-  a:hover:before {
+  .games:hover:before {
     visibility: visible;
     transform: scaleX(1);
   }
 
-  a:hover {
+  .games:hover {
     color: #8E8E8E;
   }
 

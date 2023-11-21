@@ -4,14 +4,14 @@ import 'firebase/compat/database';
 export const firebaseMixin = { 
   created() {
     const firebaseConfig = {
-        apiKey: "AIzaSyCb945-WiEIgNn0fla7t-RwWGSdcl0fLmY",
-        authDomain: "figth-club.firebaseapp.com",
-        databaseURL: "https://figth-club-default-rtdb.firebaseio.com",
-        projectId: "figth-club",
-        storageBucket: "figth-club.appspot.com",
-        messagingSenderId: "648332694104",
-        appId: "1:648332694104:web:3bcdb44463b4051b41f02d",
-        measurementId: "G-01FCEJW3W0"
+        apiKey: process.env.VUE_APP_API_KEY,
+        authDomain: process.env.VUE_APP_AUTH_DOMAIN,
+        databaseURL: process.env.VUE_APP_DATA_BASE_URL,
+        projectId: process.env.VUE_APP_PROJECT_ID,
+        storageBucket: process.env.VUE_APP_STORAGE_BUCKET,
+        messagingSenderId: process.env.VUE_APP_MESSAGING_SENDER_ID,
+        appId: process.env.VUE_APP_APP_ID,
+        measurementId: process.env.VUE_APP_MEASUREMENT_ID
     } 
 
     firebase.initializeApp(firebaseConfig)
