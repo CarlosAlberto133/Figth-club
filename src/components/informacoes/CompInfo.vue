@@ -84,6 +84,10 @@ export default {
     margin-top: 60px;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   .games {
     color: #fff;
     position: relative;
